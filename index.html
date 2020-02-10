@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pixel Hopper</title>
+    <link rel="icon" type="image/png" href="img/tool1.png">
+    <link href="https://fonts.googleapis.com/css?family=Cambay|Sigmar+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css" type="text/css">
+</head>
+<body>
+    <div id="container">
+        <div id="title">
+            <img src="img/tool1.png">
+            <h1>Pixel Hopper</h1>
+            <img src="img/tool1.png">
+            <p>
+                by dean
+            </p>
+        </div>
+        <div id="top-menu">
+            <button id="objective">
+                objective
+            </button>
+            <div id="inventory">
+                <!--inventory objects go here-->
+            </div>
+        </div>
+        <div id="game-bg">
+            <canvas id="game">
+            </canvas>
+        </div>
+        <div id="menubar">
+            <div class="arrow-keys">
+                <button id="up">
+                    jump
+                </button>
+            </div>
+            <div id="message">
+                Frog Life<sup>TM</sup>
+            </div>
+            <div class="arrow-keys">
+                <button id="left">
+                    <
+                </button>
+                <button id="right">
+                    >
+                </button>
+            </div>
+        </div>
+        <div id= "instructions">
+            <h3>How to Play:</h3>
+            <ul>
+                <li>Use WASD to move.</li>
+                <li>Click blocks to pick them up with your tongue!</li>
+                <li>Select items in inventory and click to place! 
+                    <br />(Click the item again to deselect)</li>
+                <li>Find the treasure!</li>
+            </ul>
+        </div>
+        <div id="popup">
+            <p id="popupText"></p>
+            <button id="continue">Keep Hopping</button>
+            <button id="restart">Start Over</button>
+        </div>
+    </div>
+    <script src="js/app.js" type="text/javascript"></script>
+</body>
+</html>
