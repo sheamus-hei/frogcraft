@@ -1,8 +1,8 @@
-# Project1: Pixel Hopper (FrogCraft)
+#Project 1: Frog Craft
 ### by dean-hei
 
 ## Game Link
-https://dean-hei.github.io/project1/
+https://dean-hei.github.io/frogcraft/
 
 ## 1. Project Planning
 ![](img/wireframe.jpg)
