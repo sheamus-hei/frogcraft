@@ -26,6 +26,13 @@ h1 {
 #title p {
     display: inline;
 }
+a {
+    color: rgb(238, 173, 88);
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(200, 255, 0);
+}
 #top-menu {
     height: 75px;
     display: flex;

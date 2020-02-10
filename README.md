@@ -1,6 +1,8 @@
 # Project 1: Frog Craft
 ### by dean-hei
 
+![](img/screenshot0.png)
+
 ## Game Link
 https://dean-hei.github.io/frogcraft/
 
