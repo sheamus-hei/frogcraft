@@ -67,15 +67,29 @@ a:hover {
     flex-direction: row;
 }
 #inventory div {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
     width: 100px;
     text-align: center;
-    line-height: 70px;
     margin: 0 10px;
     background-color: rgb(197, 104, 17);
     height: 70px;
 }
 #inventory div:hover {
     border: 1px solid rgb(200, 255, 0);
+}
+#inventory img {
+    image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+    image-rendering: -moz-crisp-edges;          /* Firefox                        */
+    image-rendering: -o-crisp-edges;            /* Opera                          */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+    image-rendering: pixelated; /* Chrome */
+    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+    height: 40px;
+    width: 40px;
 }
 button {
     font-family: 'Cambay', sans-serif;
@@ -84,6 +98,13 @@ button {
     background: white;
     width: 140px;
     font-size: 16px;
+    /* to fix user being able to copy/paste button text*/
+    -webkit-touch-callout: none;
+    -webkit-user-select: nonke;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 #left {
     width: 70px;
@@ -95,7 +116,7 @@ button {
     border-radius: 10px;
     background: white;
     color: black;
-    padding: 10px;
+    padding: 10px 50px;
     margin: 10px;
 }
 #popup {
@@ -110,3 +131,9 @@ button {
     color: black;
     padding: 10px;
 }
+#instructions a { 
+    color: sienna;
+}
+#instructions a:hover {
+   color: rgb(144, 180, 15);
+} 

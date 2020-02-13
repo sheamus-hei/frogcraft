@@ -360,8 +360,8 @@ function inventoryAdd(x, y){
         }
         inventory[type]++;
         // update the gui
-        // document.querySelector(`.${type}`).innerHTML = `<image src=img/${type}.png height="20" width="20"> x ${inventory[type]}`;
-        document.querySelector(`.${type}`).innerText = `${type} x ${inventory[type]}`;
+        document.querySelector(`.${type}`).innerHTML = `<image src="img/${type}.png"> x ${inventory[type]}`;
+        // document.querySelector(`.${type}`).innerText = `${type} x ${inventory[type]}`;
         // give text feedback
         message.innerText = "Picked up " + type + "!";
         // check if won game 
@@ -502,8 +502,8 @@ function placeBlock(e) {
         // update number on GUI
         let invSlot = document.getElementsByClassName(invSelected)[0];
         if (invSlot) {
-            // invSlot.innerHTML = `<image src=img/${invSelected}.png height="20" width="20"> x ${inventory[invSelected]}`;
-            invSlot.innerText = `${invSelected} x ${inventory[invSelected]}`;
+            invSlot.innerHTML = `<image src="img/${invSelected}.png"> x ${inventory[invSelected]}`;
+            // invSlot.innerText = `${invSelected} x ${inventory[invSelected]}`;
         }
         // remove key if it was the last one
         if (inventory[invSelected] == 0) {
