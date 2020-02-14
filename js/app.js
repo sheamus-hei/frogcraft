@@ -380,19 +380,29 @@ function inventoryAdd(x, y){
 
 // updates the inventory GUI when an item is selected
 function selectInventory(e){
+    // note: in this section, there are checks to make sure it selects the div and not 
+    // the image when the user clicks on the inventory slot
     // remove border from previous selected item
-    if (invSelected == e.target.classList[0]) {
+    if (invSelected == e.target.classList[0] || 
+        invSelected == e.target.parentElement.classList[0]) {
         document.getElementsByClassName(invSelected)[0].style.border = "0";
         invSelected = "none";
-        message.innerHTML = "Back to lickin' stuff!";
+        message.innerText = "Back to lickin' stuff!";
     } else {
         if (invSelected != "none") {
             document.getElementsByClassName(invSelected)[0].style.border = "0";
         }
         // update to what they clicked
-        invSelected = e.target.classList[0];
-        e.target.style.border = "2px solid rgb(39, 21, 14)";
-        message.innerHTML = "Let's place some " + invSelected + "!";
+        console.log(e.target);
+        console.log(e.target.tagName);
+        if (e.target.tagName == "DIV") {
+            invSelected = e.target.classList[0];
+            e.target.style.border = "2px solid rgb(39, 21, 14)";
+        } else {
+            invSelected = e.target.parentElement.classList[0];
+            e.target.parentElement.style.border = "2px solid rgb(39, 21, 14)";
+        }  
+        message.innerText = "Let's place some " + invSelected + "!";
     }
 }
 
