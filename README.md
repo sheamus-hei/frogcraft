@@ -1,10 +1,10 @@
 # Project 1: Frog Craft
-### by dean-hei
+### by erik-hei
 
 ![](img/screenshot0.png)
 
 ## Game Link
-https://dean-hei.github.io/frogcraft/
+https://erik-hei.github.io/frogcraft/
 
 ## 1. Project Planning
 ![](img/wireframe.jpg)
