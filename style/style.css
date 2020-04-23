@@ -87,7 +87,7 @@ a:hover {
     image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
     image-rendering: pixelated; /* Chrome */
     image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
-    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+    -ms-interpolation-mode: nearest-neighbor;   IE8+          
     height: 40px;
     width: 40px;
 }
