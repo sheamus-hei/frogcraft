@@ -1,5 +1,4 @@
 # Project 1: Frog Craft
-### by erik-hei
 
 ![](img/screenshot0.png)
 
